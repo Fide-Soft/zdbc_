@@ -1,4 +1,10 @@
 <?php
+require('recaptcha-master/src/autoload.php');
+$recaptchaSecret = '6LeBT6oZAAAAAOpBhy6LJIYkjZfB8kqXg_zahkD3';
+$recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret);
+$response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+if (!$response->isSuccess()) {
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -31,4 +37,5 @@ $mailheader = "Od: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Błąd!");
 print json_encode(array((string)('message' => 'Wiadomość została pomyślnie wysłana!', 'code' => 1)));
 exit();
+}
 ?>

@@ -695,7 +695,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="md-form">
-                      <div class="g-recaptcha" data-sitekey="6LeBT6oZAAAAAEceIINDz5tNqxQxqvYv4SYFhx8m"></div>
+                      <div class="g-recaptcha" data-callback='onSubmit' data-sitekey="6LeBT6oZAAAAAEceIINDz5tNqxQxqvYv4SYFhx8m"></div>
                     </div>
                   </div>
                 </div>
@@ -703,7 +703,7 @@
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="validateForm();">Wyślij</a>
+                <a class="btn btn-primary" onclick="validateForm();" data-action='submit'>Wyślij</a>
             </div>
             <h1><div id="status" class="status text-center"></div></h1>
         </div>
@@ -848,6 +848,7 @@
     <script src="../js/custom-js.js"></script>
     <script src="../js/mdb.min.js"></script>
     <script src="../js/form-validate.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </body>
 </html>
 <!--This software uses Material Design for Bootstrap (Free) & EBM Bootstrap Plugin License - see ../license.txt-->

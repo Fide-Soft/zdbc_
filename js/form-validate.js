@@ -1,4 +1,13 @@
 function validateForm() {
+
+    window.verifyRecaptchaCallback = function (response) {
+        $('input[data-recaptcha]').val(response).trigger('change');
+    }
+
+    window.expiredRecaptchaCallback = function () {
+        $('input[data-recaptcha]').val("").trigger('change');
+    }
+
     var name =  document.getElementById('name').value;
     if (name == "") {
         document.querySelector('.status').innerHTML = "Pole Imie nie może być puste";
