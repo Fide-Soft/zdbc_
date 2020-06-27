@@ -29,6 +29,6 @@ $content="Od: $name \nE-mail: $email \nWiadomość: $message";
 $recipient = "contact@fide-soft.com";
 $mailheader = "Od: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Błąd!");
-print json_encode(array('message' => 'Wiadomość została pomyślnie wysłana!', 'code' => 1));
+print json_encode(array((string)('message' => 'Wiadomość została pomyślnie wysłana!', 'code' => 1)));
 exit();
 ?>
