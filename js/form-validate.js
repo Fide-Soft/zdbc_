@@ -57,7 +57,7 @@ function validateForm() {
         },
         error: function (jqXHR, textStatus, errorThrown)
         {
-        $('#status').text(jqXHR);
+        $('#status').text("Błąd... !");
         }
         });
   }
