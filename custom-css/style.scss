@@ -245,12 +245,6 @@ i.fas:hover {
   background: #232323 !important;
 }
 
-@media (min-width: 992px) {
-  .card-contact {
-    height: calc(17rem + 1vh) !important;
-  }
-}
-
 #content-6 h2 {
   color: yellow !important;
   font-size: calc(1.5rem + 1vw) !important;
@@ -1107,5 +1101,25 @@ form .md-form .form-control::placeholder {
       color: rgba(133, 133, 133, 0.5) !important;
       cursor: default !important;
     }
+  }
+}
+
+.carousel-caption{
+
+  h5{
+    font-size: calc(1.7rem + 1vw) !important;
+  }
+
+  p{
+    font-size: calc(1rem + 1vw) !important;
+  }
+}
+
+#content-6{
+
+  h3{
+    color: white !important;
+    text-align: left !important;
+    font-size: calc(0.7rem + 1vw) !important;
   }
 }
