@@ -1,6 +1,6 @@
 <?php
-require('recaptcha-master/src/autoload.php');
-$recaptchaSecret = '6LeBT6oZAAAAAOpBhy6LJIYkjZfB8kqXg_zahkD3';
+require('../pl/recaptcha-master/src/autoload.php');
+$recaptchaSecret = '6LebkKoZAAAAAFNX1Q8GEPB56P1v_zN54OBaFFyU';
 $recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret);
 $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 if (!$response->isSuccess()) {
