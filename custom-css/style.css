@@ -97,7 +97,7 @@ body {
   }
   .nav-top-fix {
     -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
+    transform: translateY(-30%);
   }
 }
 
@@ -110,15 +110,15 @@ body {
 .navbar li a:hover {
   color: yellow !important;
   -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
   -webkit-transform: translateY(-10%) !important;
-          transform: translateY(-10%) !important;
+  transform: translateY(-10%) !important;
 }
 
 @media (min-width: 992px) {
   .navbar li a:hover.nav-top-fix {
     -webkit-transform: translateY(-40%) !important;
-            transform: translateY(-40%) !important;
+    transform: translateY(-40%) !important;
   }
 }
 
@@ -128,6 +128,14 @@ body {
 
 .h-50vh {
   height: 50vh !important;
+}
+
+.h-70vh {
+  height: 70vh !important;
+}
+
+.h-90vh {
+  height: 90vh !important;
 }
 
 .bg-black {
@@ -184,11 +192,11 @@ body {
   .bg-yellow {
     background-color: yellow !important;
     -webkit-transform: translateX(-6rem);
-            transform: translateX(-6rem);
+    transform: translateX(-6rem);
   }
   .go-left {
     -webkit-transform: translateX(-6rem) !important;
-            transform: translateX(-6rem) !important;
+    transform: translateX(-6rem) !important;
   }
 }
 
@@ -1073,5 +1081,24 @@ form .md-form .form-control::placeholder {
 .md-form.input-with-post-icon.input-with-pre-icon .form-control {
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
+}
+
+.a-link a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.a-link a:hover {
+  color: yellow !important;
+}
+
+#content-7 a, #content-8 a {
+  font-size: calc(1.5rem + 1vw) !important;
+  cursor: pointer !important;
+}
+
+#content-7 .disabled a, #content-8 .disabled a {
+  color: rgba(133, 133, 133, 0.5) !important;
+  cursor: default !important;
 }
 /*# sourceMappingURL=style.css.map */
