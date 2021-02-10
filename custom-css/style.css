@@ -1107,6 +1107,27 @@ form .md-form .form-control::placeholder {
 #content-6 h3 {
   color: white !important;
   text-align: left !important;
-  font-size: calc(0.7rem + 1vw) !important;
+  font-size: calc(0.4rem + 0.85vw) !important;
+}
+
+.btn-yl-col {
+  color: #fbff00 !important;
+}
+
+.owl-carousel .owl-theme {
+  margin: 0 0 0 0 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: calc(0.7rem + 1vw) !important;
+  height: calc(0.7rem + 1vw) !important;
+}
+
+#contactform h4 {
+  color: #f3f730 !important;
+}
+
+.map-h {
+  height: 30vw !important;
 }
 /*# sourceMappingURL=style.css.map */
