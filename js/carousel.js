@@ -1,4 +1,4 @@
-$('.loop').owlCarousel({
+$('.owl-content-2').owlCarousel({
   center: true,
   loop:true,
   autoplay:false,
@@ -6,11 +6,43 @@ $('.loop').owlCarousel({
   autoHeight:true,
 });
 
-$('.loop').on('mousewheel', '.owl-stage', function (e) {
+$('.owl-content-2-inside').owlCarousel({
+  center: true,
+  items:2,
+  loop:true,
+  margin:10,
+  dots: false,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  responsive:{
+      600:{
+          items:4
+      }
+  }
+});
+
+$('.owl-content-4').owlCarousel({
+  center: true,
+  items:2,
+  loop:true,
+  margin:10,
+  autoplay:true,
+  autoplayTimeout:2000,
+  autoplayHoverPause:true,
+  autoHeight:true,
+  responsive:{
+      600:{
+          items:3
+      }
+  }
+});
+
+$('.owl-content-2').on('mousewheel', '.owl-stage', function (e) {
 if (e.deltaY>0) {
-  $('.loop').trigger('next.owl');
+  $('.owl-content-2').trigger('next.owl');
 } else {
-  $('.loop').trigger('prev.owl');
+  $('.owl-content-2').trigger('prev.owl');
 }
 e.preventDefault();
 });

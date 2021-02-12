@@ -261,6 +261,7 @@ i.fas:hover {
 
 .card-gallery {
   height: calc((15rem + 1vh) - 2vw) !important;
+  background-color: rgba(35, 35, 35, 0.9) !important;
 }
 
 .md-form input {
@@ -1101,7 +1102,7 @@ form .md-form .form-control::placeholder {
 }
 
 .carousel-caption p {
-  font-size: calc(1rem + 1vw) !important;
+  font-size: calc(0.6rem + 0.6vw) !important;
 }
 
 #content-6 h3 {
@@ -1129,5 +1130,33 @@ form .md-form .form-control::placeholder {
 
 .map-h {
   height: 30vw !important;
+}
+
+p.text-al-left {
+  text-align: left !important;
+  margin: 1rem 1rem 1rem 1rem !important;
+  font-size: calc(0.7rem + 0.7vw) !important;
+}
+
+.car-box {
+  width: 100% !important;
+  color: white !important;
+  position: relative !important;
+  float: left !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.owl-content-2-inside .owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.owl-content-2-inside .caption {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
