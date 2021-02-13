@@ -1159,4 +1159,11 @@ p.text-al-left {
 .owl-content-2-inside .caption {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .shrink-card {
+    height: 85% !important;
+    max-height: 100% !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
