@@ -12,6 +12,10 @@ body {
   font-family: "3ds" !important;
 }
 
+#content-1{
+  font-family: 'Lato', sans-serif !important;
+}
+
 #content-1, #content-2, #content-3, #content-4, #content-5, #content-6, #content-7, #content-8, #content-9 {
   width: 100%;
   margin: 0;
@@ -139,6 +143,10 @@ body {
 
 .bg-black {
   background-color: rgba(35, 35, 35, 0.9);
+  -webkit-box-shadow: 10px 10px 20px -7px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 20px -7px rgba(0,0,0,1);
+  box-shadow: 10px 10px 20px -7px rgba(0,0,0,1);
+  
 }
 
 .margin-top {
@@ -156,8 +164,8 @@ body {
 }
 
 .cards-margin {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: calc(1rem + 1vw) !important;
+  margin-bottom: calc(1rem + 1vw) !important;
 }
 
 .card img {
