@@ -1141,7 +1141,7 @@ form .md-form .form-control::placeholder {
 p.text-al-left {
   text-align: left !important;
   margin: 1rem 1rem 1rem 1rem !important;
-  font-size: calc(0.7rem + 0.7vw) !important;
+  font-size: calc(0.9rem + 1vw) !important;
 }
 
 .car-box {
@@ -1171,5 +1171,20 @@ p.text-al-left {
     height: 85% !important;
     max-height: 100% !important;
   }
+}
+
+.navbar-text a.langactive {
+  border: solid 0.1vw white !important;
+}
+
+.navbar-text a {
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar-text a:hover {
+  color: red !important;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

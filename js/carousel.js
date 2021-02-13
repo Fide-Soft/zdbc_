@@ -38,6 +38,14 @@ $('.owl-content-4').owlCarousel({
   }
 });
 
+owl.on('drag.owl.carousel', function(event) {
+  $('body').css('overflow', 'hidden');
+});
+
+owl.on('dragged.owl.carousel', function(event) {
+  $('body').css('overflow', 'auto');
+});
+
 $('.owl-content-2').on('mousewheel', '.owl-stage', function (e) {
 if (e.deltaY>0) {
   $('.owl-content-2').trigger('next.owl');
