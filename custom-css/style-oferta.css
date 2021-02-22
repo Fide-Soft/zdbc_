@@ -1,0 +1,28 @@
+#content-oferta {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  float: left;
+  background-size: cover !important;
+  scroll-margin-top: 5rem;
+  margin-top: 4.7rem !important;
+  background: url("../img/bg/tlogray-3.webp") no-repeat center center fixed !important;
+}
+
+@media (min-width: 992px) {
+  #content-oferta {
+    margin-top: 5.4rem !important;
+  }
+}
+
+#content-oferta p {
+  color: white !important;
+}
+
+#content-oferta h1 {
+  font-size: calc(2.2rem + 1vw) !important;
+  color: white !important;
+}
+/*# sourceMappingURL=style-oferta.css.map */
