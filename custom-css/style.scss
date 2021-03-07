@@ -1165,13 +1165,12 @@ p.text-al-left{
   font-size: calc(0.9rem + 1vw) !important;
 }
 
-.car-box {
-  width: 100% !important;
-  color: white !important;
-  position: relative !important;
-  float: left !important;
-  padding: 0 !important;
-  margin: 0 !important;
+.con2-box {
+
+    img{
+      width: 100% !important;
+      height: 80px !important;
+    }
 }
 
 .owl-content-2-inside .owl-stage {
@@ -1203,4 +1202,13 @@ p.text-al-left{
       cursor: pointer;
     }
   }
+}
+
+.center-img{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }

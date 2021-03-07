@@ -1144,13 +1144,9 @@ p.text-al-left {
   font-size: calc(0.9rem + 1vw) !important;
 }
 
-.car-box {
+.con2-box img {
   width: 100% !important;
-  color: white !important;
-  position: relative !important;
-  float: left !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  height: 80px !important;
 }
 
 .owl-content-2-inside .owl-stage {
@@ -1186,5 +1182,15 @@ p.text-al-left {
 .navbar-text a:hover {
   color: red !important;
   cursor: pointer;
+}
+
+.center-img {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
